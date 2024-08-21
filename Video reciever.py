@@ -19,8 +19,8 @@ s.listen(10)
 print('Socket now listening')
 
 conn, addr=s.accept()
-face_cascade = cv2.CascadeClassifier('cascades/data/haarcascade_frontalface_alt2.xml')
-face_cascade2 = cv2.CascadeClassifier('cascades/data/haarcascade_frontalface_default.xml')
+face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_alt2.xml')
+face_cascade2 = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
 out = cv2.VideoWriter('output.avi', fourcc, 20.0, (640, 480))
 data = b""
